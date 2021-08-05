@@ -19,11 +19,12 @@ from GlobalVariable import globalVariables as gbv
 
     a.  通过对属性赋值添加
 
-        ```gbv.newVariable = "This is a new global variable"```
+        ` gbv.newVariable = "This is a new global variable" `
+
 
     b.  通过 gbv.add()方法添加
 
-        ```gbv.add("newVariable", "This is a new global variable")```
+        ` gbv.add("newVariable", "This is a new global variable") `
 
         
         ```
