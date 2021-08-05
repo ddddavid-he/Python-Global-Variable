@@ -44,13 +44,13 @@ class GlobalVariable:
             self.__delattr__(n)
     
     def get(self, name:NameType):
-        attrs = []
         if type(name) is str:
-            name = [name]
-        for n in name:
-            attrs.append(self.__getattribute__(n))
-            
-        return attrs
+            return self.__getattribute__(name)
+        else:
+            attrs = []
+            for n in name:
+                attrs.append(self.__getattribute__(n))    
+            return attrs
         
 
 global  globalVariables
